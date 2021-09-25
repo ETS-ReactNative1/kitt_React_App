@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-        
-        node:6-alpine
+   agent any
     }
   stages {
     stage('Clone') {
