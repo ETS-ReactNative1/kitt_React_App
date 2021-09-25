@@ -1,7 +1,7 @@
 pipeline {
   agent {
         
-            image 'node:6-alpine'
+        node:6-alpine
     }
   stages {
     stage('Clone') {
