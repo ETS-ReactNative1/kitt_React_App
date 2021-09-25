@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/BorhenHammami/React_project'
+        git 'https://github.com/BorhenHammami/kilt_react.git'
    
       }
     
