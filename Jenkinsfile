@@ -1,17 +1,16 @@
 pipeline {
-   agent any
-    }
+  agent any
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/BorhenHammami/kilt_react.git'
+        git 'https://github.com/BorhenHammami/React_project'
    
       }
     
     }
     stage('Install Packages') {
       steps {
-        sh 'npm install npm@latest -g'
+        sh 'npm install'
       }
     }
     stage('Test and Build') {
@@ -26,7 +25,7 @@ pipeline {
             sh 'npm run build'
           }
        }
-       
+ 
       }
     }
     }    
