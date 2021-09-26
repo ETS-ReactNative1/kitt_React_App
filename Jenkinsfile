@@ -32,7 +32,7 @@ pipeline {
          }
         stage('Upload') {
           steps {
-            sh './copy.sh'
+            sh '/var/lib/jenkins/workspace/kitt/copy.sh'
       }
        }
       }
