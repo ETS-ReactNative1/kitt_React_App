@@ -33,7 +33,7 @@ pipeline {
         stage('Upload') {
           steps {
             sh '''#!/bin/bash
-                 scp -i Machine1.pem /var/lib/jenkins/workspace/kitt/build.zip ubuntu@3.144$
+                 scp -i Machine1.pem /var/lib/jenkins/workspace/kitt/build.zip ubuntu@3.144.124.171
                   '''
       
       }
