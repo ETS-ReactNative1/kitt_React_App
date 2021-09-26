@@ -32,7 +32,7 @@ pipeline {
          }
         stage('Upload') {
           steps {
-            sh 'sh copy.sh'
+            sh './copy.sh'
       }
        }
       }
