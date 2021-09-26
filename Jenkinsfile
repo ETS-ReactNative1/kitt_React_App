@@ -30,11 +30,7 @@ pipeline {
             sh 'zip -r build.zip ./build'
         }
          }
-        stage('Upload') {
-          steps {
-            sh '/var/lib/jenkins/workspace/kitt/copy.sh'
-      }
-       }
+     
       }
     }
     }    
