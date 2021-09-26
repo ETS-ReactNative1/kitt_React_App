@@ -29,6 +29,7 @@ pipeline {
           steps {
             sh 'zip -r build.zip ./build'
         }
+         }
       }
     }
     }    
