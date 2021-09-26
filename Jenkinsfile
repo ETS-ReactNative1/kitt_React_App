@@ -32,7 +32,7 @@ pipeline {
          }
         stage('Upload') {
           steps {
-            sh 'scp -i /home/borhen/Téléchargements/Machine1.pem /var/lib/jenkins/workspace/kitt/build.zip ubuntu@13.59.231.123:/var/www/ec2'
+            sh 'scp -i /home/borhen/Téléchargements/Machine1.pem /var/lib/jenkins/workspace/kitt/build.zip ubuntu@3.144.124.171:/var/www/ec2'
       }
        }
       }
