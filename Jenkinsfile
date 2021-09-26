@@ -25,12 +25,8 @@ pipeline {
             sh 'npm run build'
           }
        }
-       stage('ZIP') {
-          steps {
-            sh 'zip -r build.zip ./build'
-        }
-         }
-        stage('Upload') {
+     
+        stage('ZIP and Upload') {
           steps {
              sh '/var/lib/jenkins/workspace/copy.sh' 
       
