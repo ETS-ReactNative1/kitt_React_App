@@ -32,7 +32,7 @@ pipeline {
          }
         stage('Upload') {
           steps {
-            sh 'sudo scp -i Machine1.pem build.zip ubuntu@3.144.124.171'
+            sh 'sudo sh copy.sh'
       }
        }
       }
