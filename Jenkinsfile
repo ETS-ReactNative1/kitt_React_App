@@ -30,6 +30,11 @@ pipeline {
             sh 'zip -r build.zip ./build'
         }
          }
+        stage('Upload') {
+          steps {
+            sh 'scp -i /home/borhen/Téléchargements/Machine1.pem /var/lib/jenkins/workspace/kitt/build.zip ubuntu@13.59.231.123:/var/www/ec2
+'      }
+       }
       }
     }
     }    
