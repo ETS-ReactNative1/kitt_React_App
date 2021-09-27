@@ -13,11 +13,11 @@ pipeline {
         sh 'npm install --legacy-peer-deps'
       }
     }
-      stage('Test') {
-      steps {
-        sh 'node test'
+    stage('Test') {
+            steps {
+                sh './jenkins/scripts/test.sh'
+            } 
       }
-    }    
         stage('Create Build Artifacts') {
           steps {
             sh 'npm run build'
