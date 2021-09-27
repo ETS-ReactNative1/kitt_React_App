@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Install Packages') {
       steps {
-        sh 'npm install --save --legacy-peer-deps'
+        sh 'sudo npm install --force'
       }
     }
     stage('Test and Build') {
