@@ -19,11 +19,7 @@ pipeline {
             sh 'npm run build'
           }
        }
-     stage('Run Tests') {
-          steps {
-            sh 'npm run test'
-          }
-        }
+    
      
         stage('ZIP and Upload') {
           steps {
