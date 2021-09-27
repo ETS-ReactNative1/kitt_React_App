@@ -29,7 +29,7 @@ pipeline {
         stage('ZIP and Upload') {
           steps {
              sh '/var/lib/jenkins/workspace/copy.sh' 
-      
+      }
       }
       }
     }
