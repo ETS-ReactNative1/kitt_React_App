@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Install Packages') {
       steps {
-        sh 'sudo npm install --force'
+        sh 'sudo npm install'
       }
     }
     stage('Test and Build') {
