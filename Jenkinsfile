@@ -28,8 +28,7 @@ pipeline {
           steps {
              sh '/var/lib/jenkins/workspace/copy.sh' 
       
-      }
-       }
+      
       }
     }
     }    
