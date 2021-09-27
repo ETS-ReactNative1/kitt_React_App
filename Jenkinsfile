@@ -13,7 +13,6 @@ pipeline {
         sh 'npm install --legacy-peer-deps'
       }
     }
-     stage('Test') {
         stage('Run Tests') {
           steps {
             sh 'npm run test'
@@ -30,7 +29,7 @@ pipeline {
              sh '/var/lib/jenkins/workspace/copy.sh' 
       
       }
-      }
+      
     }
     
     }    
