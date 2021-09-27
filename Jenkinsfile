@@ -13,7 +13,11 @@ pipeline {
         sh 'npm install --legacy-peer-deps'
       }
     }
-        
+      stage('Test') {
+      steps {
+        sh 'node test'
+      }
+    }    
         stage('Create Build Artifacts') {
           steps {
             sh 'npm run build'
@@ -27,5 +31,6 @@ pipeline {
       
       }
     }
+    
     }    
 }
