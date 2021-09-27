@@ -26,7 +26,6 @@ pipeline {
              sh '/var/lib/jenkins/workspace/copy.sh' 
       
       }
-      
     }
     
     }    
