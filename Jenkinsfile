@@ -13,8 +13,7 @@ pipeline {
         sh 'npm install --legacy-peer-deps'
       }
     }
-     stage('Test and Build') {
-      parallel {
+     stage('Test') {
         stage('Run Tests') {
           steps {
             sh 'npm run test'
