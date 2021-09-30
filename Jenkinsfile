@@ -21,7 +21,7 @@ pipeline {
        }
     
      
-        stage('ZIP and Upload') {
+        stage('ZIP and Deploy') {
           steps {
              sh '/var/lib/jenkins/workspace/copy.sh' 
       
